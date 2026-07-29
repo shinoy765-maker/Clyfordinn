@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clyford Inn - ക്ലിഫോർഡ് ഇൻ | Luxury 3 Star Hotel Kannur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --navy: #0A1F44;
+      --white: #FFFFFF;
+      --light: #F8F9FA;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', Arial, sans-serif; background: var(--white); color: #333; }
+    
+    header { 
+      background: linear-gradient(rgba(10,31,68,0.85), rgba(212,175,55,0.3)), url('clyford-front.jpg') center/cover; 
+      color: white; text-align: center; padding: 140px 20px; 
+    }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 52px; margin-bottom: 10px; color: var(--gold); text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
+    header p { font-size: 20px; margin-bottom: 20px; }
+    .rating { font-size: 20px; margin: 15px 0; color: var(--gold); }
+    
+    nav { background: var(--navy); padding: 18px; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    nav a { color: var(--gold); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 16px; transition: 0.3s; }
+    nav a:hover { color: white; }
+    
+    .container { max-width: 1200px; margin: auto; padding: 70px 20px; }
+    h2 { font-family: 'Playfair Display', serif; color: var(--navy); text-align: center; margin-bottom: 40px; font-size: 36px; }
+    h2:after { content: ''; display: block; width: 80px; height: 3px; background: var(--gold); margin: 15px auto; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .card { background: var(--light); padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid var(--gold); transition: 0.3s; }
+    .card:hover { transform: translateY(-8px); }
+    
+    .room { border: 2px solid var(--gold); border-radius: 15px; padding: 30px; background: white; text-align: center; }
+    .price { font-size: 32px; color: var(--gold); font-weight: 700; margin: 15px 0; }
+    
+    .btn { display: inline-block; padding: 16px 32px; margin: 10px 8px; background: var(--gold); color: var(--navy); text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 16px; transition: 0.3s; box-shadow: 0 4px 15px rgba(212,175,55,0.4); }
+    .btn:hover { background: var(--navy); color: var(--gold); transform: scale(1.05); }
+    .btn.call { background: var(--navy); color: var(--gold); }
+    .btn.booking { background: #003580; color: white; }
+    .btn.trip { background: #0088CC; color: white; }
+    .btn.goi { background: #FF9000; color: white; }
+    
+    .map { width: 100%; height: 400px; border: 0; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+    .booking-box { background: linear-gradient(135deg, var(--navy), #1a3a6e); padding: 40px; border-radius: 20px; text-align: center; margin: 50px 0; border: 2px solid var(--gold); }
+    .booking-box h3 { color: var(--gold); }
+    
+    footer { background: var(--navy); color: white; text-align: center; padding: 50px 20px; border-top: 4px solid var(--gold); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ക്ലിഫോർഡ് ഇൻ</h1>
+  <h2 style="color:white; font-size:28px;">Clyford Inn</h2>
+  <p>Netaji Rd, Opp. Malabar Gold, Kannur - 670001</p>
+  <div class="rating">⭐ 3 Star Luxury Hotel | Rated 8.5/10</div>
+  <a href="tel:8111999700" class="btn call">📞 Call: 8111999700</a>
+  <a href="https://wa.me/918111999700" class="btn">💬 WhatsApp Booking</a>
+</header>
+
+<nav>
+  <a href="#about">About</a> 
+  <a href="#rooms">Rooms</a> 
+  <a href="#amenities">Amenities</a> 
+  <a href="#book">Book Now</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section id="about">
+    <h2>Welcome to Clyford Inn</h2>
+    <p style="text-align:center; font-size:18px; line-height:1.8;">Experience comfort and luxury in the heart of Kannur. Budget-friendly 3-star hotel with Free WiFi, Restaurant, Free Parking. Just 10 min walk to Railway Station and near Fort St. Angelos.</p>
+  </section>
+
+  <section id="rooms">
+    <h2>Rooms & Tariff</h2>
+    <div class="grid">
+      <div class="room">
+        <h3>Deluxe Room</h3>
+        <p>Free WiFi, Smart TV, Hot Water, AC</p>
+        <p class="price">₹1,939 / Night</p>
+        <a href="tel:8111999700" class="btn">Book Now</a>
+      </div>
+      <div class="room">
+        <h3>Executive Suite</h3>
+        <p>Work area, Premium amenities, AC</p>
+        <p class="price">₹2,499 / Night</p>
+        <a href="tel:8111999700" class="btn">Book Now</a>
+      </div>
+      <div class="room">
+        <h3>Family Suite</h3>
+        <p>4 Persons, Living Area, AC</p>
+        <p class="price">₹3,499 / Night</p>
+        <a href="tel:8111999700" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="amenities">
+    <h2>Premium Amenities</h2>
+    <div class="grid">
+      <div class="card">📶 Free High-Speed WiFi</div>
+      <div class="card">🛎️ 24 Hour Front Desk</div>
+      <div class="card">🍽️ Multi-Cuisine Restaurant</div>
+      <div class="card">🅿️ Complimentary Parking</div>
+    </div>
+  </section>
+
+  <section id="book">
+    <h2>Book Your Stay</h2>
+    <div class="booking-box">
+      <h3>Book Direct & Save More</h3>
+      <p style="color:white; margin:15px 0;">Best Price Guarantee | No Booking Fees</p>
+      <a href="tel:8111999700" class="btn call">📞 Call: 8111999700</a>
+      <a href="https://wa.me/918111999700" class="btn">💬 WhatsApp</a>
+    </div>
+
+    <h3 style="text-align:center; margin: 30px 0; color:var(--navy);">Or Book Through</h3>
+    <div class="grid">
+      <div class="card"><h4>Booking.com</h4><a href="https://www.booking.com/hotel/in/clyford-inn-kannur.html" target="_blank" class="btn booking">Book Now</a></div>
+      <div class="card"><h4>Trip.com</h4><a href="https://www.trip.com/hotels/kannur-hotel-detail-1388907/clyford-inn/" target="_blank" class="btn trip">Book Now</a></div>
+      <div class="card"><h4>Goibibo</h4><a href="https://www.goibibo.com/hotels/clyford-inn-hotel-in-kannur-1388907/" target="_blank" class="btn goi">Book Now</a></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Location</h2>
+    <div class="grid">
+      <div>
+        <h3 style="color:var(--navy);">Clyford Inn</h3>
+        <p><b>Address:</b> Netaji Rd, Opp. Malabar Gold, Kannur 670001</p>
+        <p><b>Phone:</b> +914972714011</p>
+        <div style="margin-top:20px;">
+          <a href="tel:8111999700" class="btn call">Call Now</a>
+          <a href="https://wa.me/918111999700" class="btn">WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <iframe class="map" src="https://www.google.com/maps?q=11.868027,75.365424&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p style="color:var(--gold); font-size:20px;"><span class="rating">⭐</span> Luxury 3 Star Hotel</p>
+  <p>© 2026 Clyford Inn, Kannur | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
